@@ -1,6 +1,6 @@
-# ReelRecs
+# FilmSage
 
-A movie recommendation chatbot powered by RAG (Retrieval-Augmented Generation). You ask it about movies, it searches a vector database of movie descriptions and gives you a conversational answer grounded in real data — not hallucinated nonsense.
+An AI-powered movie recommendation chatbot built with RAG (Retrieval-Augmented Generation). It searches a vector database of 50 curated movie descriptions and gives grounded, conversational answers — no hallucinations.
 
 ![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-4.x-000000?logo=express)
@@ -8,49 +8,70 @@ A movie recommendation chatbot powered by RAG (Retrieval-Augmented Generation). 
 ![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-412991?logo=openai&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-pgvector-3FCF8E?logo=supabase&logoColor=white)
 
-## How it works
+## Demo
+
+![FilmSage Demo](assets/demo.png)
+
+**Three capabilities in one conversation:**
+- **Recommendations** — "What movie should I watch if I like prison dramas?" → Suggests The Shawshank Redemption and The Green Mile with reasoning
+- **Off-topic refusal** — "What's the weather today?" → Politely declines instead of hallucinating
+- **Factual recall** — "Who directed The Dark Knight?" → Christopher Nolan, pulled directly from the knowledge base
+
+## Performance Metrics
+
+Evaluated on 20 graded test queries (10 factual, 5 ambiguous, 5 adversarial):
+
+| Metric | Value |
+|---|---|
+| Retrieval precision | **100%** (40/40 points) |
+| Avg latency | **2,135ms** per query |
+| Cost | **$17.21** per 1,000 queries |
+| Corpus | **50 documents**, ~5,300 tokens |
+| Embedding model | text-embedding-ada-002 (1536 dims) |
+| Top-k | 4 chunks per query |
+| Similarity threshold | 0.50 (cosine) |
+
+> Full evaluation harness and graded results available in the [`eval/`](eval/) directory.
+
+## How It Works
 
 ```
 User question
     ↓
-OpenAI text-embedding-ada-002 turns it into a vector
+OpenAI text-embedding-ada-002 → 1536-dim query vector
     ↓
-Supabase pgvector finds the 4 closest movie descriptions
+Supabase pgvector cosine search → top 4 matching movie descriptions
     ↓
-GPT-4 writes a conversational answer using those matches as context
+GPT-4 generates answer grounded in retrieved context (temp=0.65)
     ↓
-User gets a grounded recommendation
+If no relevant match → "Sorry, I don't know the answer."
 ```
 
-The key idea: GPT-4 never makes stuff up about movies because it only answers based on what the vector search returns. If it can't find a match, it says so.
-
-## Project structure
+## Project Structure
 
 ```
-├── index.html          # Frontend — simple form + response area
-├── index.js            # Frontend JS — sends queries to the backend
-├── index.css           # Styling
+├── index.html          # Frontend — chat UI with dark theme
+├── index.js            # Frontend JS — chat messages, typing indicator, suggestions
+├── index.css           # Dark theme styling
 ├── vite.config.js      # Vite config with dev proxy to backend
 ├── server/
-│   └── index.js        # Express API — handles OpenAI + Supabase calls
+│   └── index.js        # Express API — RAG pipeline (embed → retrieve → generate)
+├── eval/
+│   ├── seed-movies.js  # Seed Supabase with 50 movie descriptions + embeddings
+│   ├── corpus-stats.js # Query corpus metrics (doc count, token sizes)
+│   ├── eval-harness.js # Run 20 test queries, log retrieval + latency + cost
+│   └── results.json    # Graded evaluation results
 ├── .env.example        # Required environment variables
 ├── Dockerfile          # Multi-stage production build
-└── .gitignore
+└── assets/
+    └── demo.png        # Screenshot for README
 ```
 
-The frontend is intentionally minimal. The interesting part is the RAG pipeline on the server.
-
-## Why a backend?
-
-The original version called OpenAI directly from the browser with `dangerouslyAllowBrowser: true`. That's fine for learning, but it means anyone who opens DevTools can grab your API key. The Express server keeps all secrets server-side and adds rate limiting, input validation, and security headers (helmet).
-
-## Running it locally
-
-You'll need your own OpenAI API key and a Supabase project with movie embeddings loaded (see [Setup the vector database](#setup-the-vector-database) below).
+## Running Locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/reelrecs.git
-cd reelrecs
+git clone https://github.com/YOUR_USERNAME/filmsage.git
+cd filmsage
 
 # Install dependencies
 npm install
@@ -58,7 +79,10 @@ cd server && npm install && cd ..
 
 # Set up environment variables
 cp .env.example .env
-# Fill in your keys in .env
+# Fill in OPENAI_API_KEY, SUPABASE_URL, SUPABASE_API_KEY
+
+# Seed the database (first time only)
+node eval/seed-movies.js
 
 # Run both frontend and backend
 npm run dev
@@ -66,15 +90,9 @@ npm run dev
 
 The client runs on `http://localhost:5173` and proxies API calls to the server on port 3001.
 
-## Setup the vector database
+## Setup the Vector Database
 
-ReelRecs expects a Supabase project with:
-
-1. The `pgvector` extension enabled
-2. A table storing movie descriptions with their embedding vectors
-3. A Postgres function called `match_movies` that takes a query embedding and returns the closest matches
-
-If you're following along from the [Scrimba AI Engineer Path](https://scrimba.com/the-ai-engineer-path-c02v), this is all set up in the course. Otherwise, here's the gist:
+FilmSage requires a Supabase project with pgvector. Run this in the Supabase SQL Editor:
 
 ```sql
 -- Enable the extension
@@ -87,7 +105,7 @@ create table movies (
   embedding vector(1536)
 );
 
--- Create the match function
+-- Create the similarity search function
 create or replace function match_movies(
   query_embedding vector(1536),
   match_threshold float,
@@ -104,7 +122,9 @@ as $$
 $$;
 ```
 
-## Environment variables
+Then run `node eval/seed-movies.js` to populate with 50 movie descriptions.
+
+## Environment Variables
 
 | Variable | Required | Description |
 |---|---|---|
@@ -114,16 +134,14 @@ $$;
 | `PORT` | No | Server port (default: 3001) |
 | `CORS_ORIGIN` | No | Allowed origins, comma-separated (default: localhost) |
 
-## Why it's not deployed
+## Tech Stack
 
-API costs. Every query hits both the embeddings endpoint and GPT-4, and I'd rather not wake up to a surprise bill. If you want to try it, clone it and use your own keys — the free tier is enough to play around with.
-
-## What I learned building this
-
-- How RAG actually works end-to-end — embeddings, vector similarity, and grounded generation
-- Why you never put API keys in frontend code (even if the SDK lets you)
-- pgvector and how Supabase makes vector search surprisingly easy
-- The difference between "GPT knows about movies" and "GPT answers based on your data" — RAG makes the answers way more reliable
+- **Frontend:** Vanilla JS, HTML/CSS, Vite
+- **Backend:** Node.js, Express, Helmet, rate-limiting
+- **Vector DB:** Supabase PostgreSQL + pgvector (cosine similarity)
+- **LLM:** GPT-4 (temperature 0.65, frequency penalty 0.5)
+- **Embeddings:** text-embedding-ada-002 (1536 dimensions)
+- **Deployment:** Docker multi-stage build
 
 ## License
 
