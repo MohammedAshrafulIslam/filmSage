@@ -1,0 +1,762 @@
+[
+  {
+    "id": 1,
+    "query": "Who directed Inception and what year was it released?",
+    "category": "clear",
+    "expectedAnswer": "Christopher Nolan, 2010",
+    "latencyMs": 3588,
+    "retrievedChunks": [
+      {
+        "id": 6,
+        "similarity": 0.875154890147728,
+        "contentPreview": "Inception (2010). Directed by Christopher Nolan. Starring Leonardo DiCaprio. Dom Cobb is a thief who steals corporate se..."
+      },
+      {
+        "id": 9,
+        "similarity": 0.804006422282415,
+        "contentPreview": "The Matrix (1999). Directed by the Wachowskis. Starring Keanu Reeves, Laurence Fishburne, and Carrie-Anne Moss. A comput..."
+      },
+      {
+        "id": 3,
+        "similarity": 0.803390682754126,
+        "contentPreview": "The Dark Knight (2008). Directed by Christopher Nolan. Starring Christian Bale and Heath Ledger. Batman faces the Joker,..."
+      },
+      {
+        "id": 11,
+        "similarity": 0.803366900493772,
+        "contentPreview": "Interstellar (2014). Directed by Christopher Nolan. Starring Matthew McConaughey and Anne Hathaway. A group of astronaut..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Inception was directed by Christopher Nolan and it was released in the year 2010.",
+    "tokens": {
+      "embedding": 11,
+      "input": 473,
+      "output": 18
+    },
+    "cost": 0.0152711,
+    "grade": 2
+  },
+  {
+    "id": 2,
+    "query": "How many Academy Awards did The Lord of the Rings: The Return of the King win?",
+    "category": "clear",
+    "expectedAnswer": "11 Academy Awards",
+    "latencyMs": 1512,
+    "retrievedChunks": [
+      {
+        "id": 12,
+        "similarity": 0.870311565976659,
+        "contentPreview": "The Lord of the Rings: The Return of the King (2003). Directed by Peter Jackson. Starring Elijah Wood, Viggo Mortensen, ..."
+      },
+      {
+        "id": 13,
+        "similarity": 0.833560481687828,
+        "contentPreview": "The Lord of the Rings: The Fellowship of the Ring (2001). Directed by Peter Jackson. Starring Elijah Wood and Ian McKell..."
+      },
+      {
+        "id": 3,
+        "similarity": 0.782228596741824,
+        "contentPreview": "The Dark Knight (2008). Directed by Christopher Nolan. Starring Christian Bale and Heath Ledger. Batman faces the Joker,..."
+      },
+      {
+        "id": 14,
+        "similarity": 0.772454611198501,
+        "contentPreview": "Star Wars: Episode V - The Empire Strikes Back (1980). Directed by Irvin Kershner. Starring Mark Hamill, Harrison Ford, ..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "The Lord of the Rings: The Return of the King won all 11 Academy Awards it was nominated for.",
+    "tokens": {
+      "embedding": 18,
+      "input": 497,
+      "output": 22
+    },
+    "cost": 0.016231799999999998,
+    "grade": 2
+  },
+  {
+    "id": 3,
+    "query": "What was the budget of Get Out and how much did it gross?",
+    "category": "clear",
+    "expectedAnswer": "$4.5M budget, $255M gross",
+    "latencyMs": 2110,
+    "retrievedChunks": [
+      {
+        "id": 34,
+        "similarity": 0.834526658058172,
+        "contentPreview": "Get Out (2017). Directed by Jordan Peele. Starring Daniel Kaluuya. A young African-American man visits his white girlfri..."
+      },
+      {
+        "id": 47,
+        "similarity": 0.764769764515155,
+        "contentPreview": "Everything Everywhere All at Once (2022). Directed by Daniel Kwan and Daniel Scheinert. Starring Michelle Yeoh, Ke Huy Q..."
+      },
+      {
+        "id": 17,
+        "similarity": 0.756417065093867,
+        "contentPreview": "Parasite (2019). Directed by Bong Joon-ho. Starring Song Kang-ho. The Kim family, who are poor, scheme to become employe..."
+      },
+      {
+        "id": 40,
+        "similarity": 0.755061523031302,
+        "contentPreview": "Arrival (2016). Directed by Denis Villeneuve. Starring Amy Adams and Jeremy Renner. When twelve mysterious alien spacecr..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "The budget for \"Get Out\" was $4.5 million and it grossed $255 million worldwide.",
+    "tokens": {
+      "embedding": 14,
+      "input": 552,
+      "output": 22
+    },
+    "cost": 0.0178814,
+    "grade": 2
+  },
+  {
+    "id": 4,
+    "query": "Who played the Joker in The Dark Knight and what award did he win?",
+    "category": "clear",
+    "expectedAnswer": "Heath Ledger, posthumous Academy Award",
+    "latencyMs": 2277,
+    "retrievedChunks": [
+      {
+        "id": 3,
+        "similarity": 0.863508124204913,
+        "contentPreview": "The Dark Knight (2008). Directed by Christopher Nolan. Starring Christian Bale and Heath Ledger. Batman faces the Joker,..."
+      },
+      {
+        "id": 41,
+        "similarity": 0.839524632621505,
+        "contentPreview": "Joker (2019). Directed by Todd Phillips. Starring Joaquin Phoenix. Arthur Fleck, a failed stand-up comedian in Gotham Ci..."
+      },
+      {
+        "id": 24,
+        "similarity": 0.780698835849784,
+        "contentPreview": "The Departed (2006). Directed by Martin Scorsese. Starring Leonardo DiCaprio, Matt Damon, and Jack Nicholson. An underco..."
+      },
+      {
+        "id": 19,
+        "similarity": 0.768419004113323,
+        "contentPreview": "The Prestige (2006). Directed by Christopher Nolan. Starring Hugh Jackman and Christian Bale. Two rival magicians in Vic..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Heath Ledger played the Joker in The Dark Knight and he won a posthumous Academy Award for his portrayal.",
+    "tokens": {
+      "embedding": 15,
+      "input": 502,
+      "output": 23
+    },
+    "cost": 0.016441499999999998,
+    "grade": 2
+  },
+  {
+    "id": 5,
+    "query": "What is the runtime of Schindler's List?",
+    "category": "clear",
+    "expectedAnswer": "195 minutes",
+    "latencyMs": 1266,
+    "retrievedChunks": [
+      {
+        "id": 5,
+        "similarity": 0.854949899297918,
+        "contentPreview": "Schindler's List (1993). Directed by Steven Spielberg. Starring Liam Neeson and Ralph Fiennes. The true story of Oskar S..."
+      },
+      {
+        "id": 1,
+        "similarity": 0.791132985224283,
+        "contentPreview": "The Shawshank Redemption (1994). Directed by Frank Darabont. Starring Tim Robbins and Morgan Freeman. A banker named And..."
+      },
+      {
+        "id": 48,
+        "similarity": 0.783454522019081,
+        "contentPreview": "Dunkirk (2017). Directed by Christopher Nolan. Starring Fionn Whitehead, Tom Hardy, and Mark Rylance. The evacuation of ..."
+      },
+      {
+        "id": 26,
+        "similarity": 0.775566024451324,
+        "contentPreview": "The Green Mile (1999). Directed by Frank Darabont. Starring Tom Hanks and Michael Clarke Duncan. Death row prison guard ..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "The runtime of Schindler's List is 195 minutes.",
+    "tokens": {
+      "embedding": 11,
+      "input": 525,
+      "output": 13
+    },
+    "cost": 0.0165311,
+    "grade": 2
+  },
+  {
+    "id": 6,
+    "query": "What was the first entirely computer-animated feature film?",
+    "category": "clear",
+    "expectedAnswer": "Toy Story (1995)",
+    "latencyMs": 1298,
+    "retrievedChunks": [
+      {
+        "id": 45,
+        "similarity": 0.845528072942537,
+        "contentPreview": "Toy Story (1995). Directed by John Lasseter. Pixar Animation Studios. Woody, a cowboy doll, feels threatened when his ow..."
+      },
+      {
+        "id": 42,
+        "similarity": 0.820647789893891,
+        "contentPreview": "Up (2009). Directed by Pete Docter. Pixar Animation Studios. A 78-year-old widower named Carl Fredricksen ties thousands..."
+      },
+      {
+        "id": 28,
+        "similarity": 0.817247084400958,
+        "contentPreview": "WALL-E (2008). Directed by Andrew Stanton. Pixar Animation Studios. In the distant future, a small waste-collecting robo..."
+      },
+      {
+        "id": 9,
+        "similarity": 0.797980820591083,
+        "contentPreview": "The Matrix (1999). Directed by the Wachowskis. Starring Keanu Reeves, Laurence Fishburne, and Carrie-Anne Moss. A comput..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "The first entirely computer-animated feature film was \"Toy Story\" (1995).",
+    "tokens": {
+      "embedding": 11,
+      "input": 508,
+      "output": 17
+    },
+    "cost": 0.0162611,
+    "grade": 2
+  },
+  {
+    "id": 7,
+    "query": "Which film won Best Picture at the Oscars but was initially announced incorrectly?",
+    "category": "clear",
+    "expectedAnswer": "Moonlight (La La Land was announced first)",
+    "latencyMs": 1821,
+    "retrievedChunks": [
+      {
+        "id": 44,
+        "similarity": 0.775816619396232,
+        "contentPreview": "La La Land (2016). Directed by Damien Chazelle. Starring Ryan Gosling and Emma Stone. A jazz pianist and an aspiring act..."
+      },
+      {
+        "id": 5,
+        "similarity": 0.77208031692754,
+        "contentPreview": "Schindler's List (1993). Directed by Steven Spielberg. Starring Liam Neeson and Ralph Fiennes. The true story of Oskar S..."
+      },
+      {
+        "id": 24,
+        "similarity": 0.764116883277915,
+        "contentPreview": "The Departed (2006). Directed by Martin Scorsese. Starring Leonardo DiCaprio, Matt Damon, and Jack Nicholson. An underco..."
+      },
+      {
+        "id": 3,
+        "similarity": 0.7632917056357,
+        "contentPreview": "The Dark Knight (2008). Directed by Christopher Nolan. Starring Christian Bale and Heath Ledger. Batman faces the Joker,..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "The film that was initially announced incorrectly as the Best Picture winner at the Oscars was \"La La Land\". The actual winner was \"Moonlight\".",
+    "tokens": {
+      "embedding": 14,
+      "input": 515,
+      "output": 29
+    },
+    "cost": 0.0171914,
+    "grade": 2
+  },
+  {
+    "id": 8,
+    "query": "What visual effect did The Matrix pioneer?",
+    "category": "clear",
+    "expectedAnswer": "Bullet time",
+    "latencyMs": 1366,
+    "retrievedChunks": [
+      {
+        "id": 9,
+        "similarity": 0.845566960376555,
+        "contentPreview": "The Matrix (1999). Directed by the Wachowskis. Starring Keanu Reeves, Laurence Fishburne, and Carrie-Anne Moss. A comput..."
+      },
+      {
+        "id": 19,
+        "similarity": 0.773295500264948,
+        "contentPreview": "The Prestige (2006). Directed by Christopher Nolan. Starring Hugh Jackman and Christian Bale. Two rival magicians in Vic..."
+      },
+      {
+        "id": 6,
+        "similarity": 0.764722722421181,
+        "contentPreview": "Inception (2010). Directed by Christopher Nolan. Starring Leonardo DiCaprio. Dom Cobb is a thief who steals corporate se..."
+      },
+      {
+        "id": 11,
+        "similarity": 0.762942779941197,
+        "contentPreview": "Interstellar (2014). Directed by Christopher Nolan. Starring Matthew McConaughey and Anne Hathaway. A group of astronaut..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "The Matrix pioneered the \"bullet time\" visual effect.",
+    "tokens": {
+      "embedding": 8,
+      "input": 468,
+      "output": 11
+    },
+    "cost": 0.0147008,
+    "grade": 2
+  },
+  {
+    "id": 9,
+    "query": "How many Jews did Oskar Schindler save according to the film?",
+    "category": "clear",
+    "expectedAnswer": "Over 1,100",
+    "latencyMs": 1684,
+    "retrievedChunks": [
+      {
+        "id": 5,
+        "similarity": 0.876597453432444,
+        "contentPreview": "Schindler's List (1993). Directed by Steven Spielberg. Starring Liam Neeson and Ralph Fiennes. The true story of Oskar S..."
+      },
+      {
+        "id": 23,
+        "similarity": 0.766138883368841,
+        "contentPreview": "Saving Private Ryan (1998). Directed by Steven Spielberg. Starring Tom Hanks and Matt Damon. After the D-Day invasion of..."
+      },
+      {
+        "id": 48,
+        "similarity": 0.76461203657604,
+        "contentPreview": "Dunkirk (2017). Directed by Christopher Nolan. Starring Fionn Whitehead, Tom Hardy, and Mark Rylance. The evacuation of ..."
+      },
+      {
+        "id": 20,
+        "similarity": 0.76439541578295,
+        "contentPreview": "Django Unchained (2012). Directed by Quentin Tarantino. Starring Jamie Foxx, Christoph Waltz, and Leonardo DiCaprio. A f..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Oskar Schindler saved over 1,100 Jews during the Holocaust according to the film 'Schindler's List'.",
+    "tokens": {
+      "embedding": 16,
+      "input": 519,
+      "output": 27
+    },
+    "cost": 0.0171916,
+    "grade": 2
+  },
+  {
+    "id": 10,
+    "query": "What is the tagline of Alien?",
+    "category": "clear",
+    "expectedAnswer": "In space, no one can hear you scream",
+    "latencyMs": 1497,
+    "retrievedChunks": [
+      {
+        "id": 27,
+        "similarity": 0.863163097281831,
+        "contentPreview": "Alien (1979). Directed by Ridley Scott. Starring Sigourney Weaver. The crew of the spaceship Nostromo encounters a deadl..."
+      },
+      {
+        "id": 40,
+        "similarity": 0.818860010828998,
+        "contentPreview": "Arrival (2016). Directed by Denis Villeneuve. Starring Amy Adams and Jeremy Renner. When twelve mysterious alien spacecr..."
+      },
+      {
+        "id": 11,
+        "similarity": 0.815320041534921,
+        "contentPreview": "Interstellar (2014). Directed by Christopher Nolan. Starring Matthew McConaughey and Anne Hathaway. A group of astronaut..."
+      },
+      {
+        "id": 6,
+        "similarity": 0.783008502901109,
+        "contentPreview": "Inception (2010). Directed by Christopher Nolan. Starring Leonardo DiCaprio. Dom Cobb is a thief who steals corporate se..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "The tagline of Alien is \"In space, no one can hear you scream.\"",
+    "tokens": {
+      "embedding": 8,
+      "input": 493,
+      "output": 17
+    },
+    "cost": 0.0158108,
+    "grade": 2
+  },
+  {
+    "id": 11,
+    "query": "Which Christopher Nolan film is the best?",
+    "category": "ambiguous",
+    "expectedAnswer": "Multiple valid: Dark Knight, Inception, Interstellar, Prestige, Dunkirk",
+    "latencyMs": 2356,
+    "retrievedChunks": [
+      {
+        "id": 3,
+        "similarity": 0.837510929632142,
+        "contentPreview": "The Dark Knight (2008). Directed by Christopher Nolan. Starring Christian Bale and Heath Ledger. Batman faces the Joker,..."
+      },
+      {
+        "id": 6,
+        "similarity": 0.809295178844807,
+        "contentPreview": "Inception (2010). Directed by Christopher Nolan. Starring Leonardo DiCaprio. Dom Cobb is a thief who steals corporate se..."
+      },
+      {
+        "id": 19,
+        "similarity": 0.807638850332131,
+        "contentPreview": "The Prestige (2006). Directed by Christopher Nolan. Starring Hugh Jackman and Christian Bale. Two rival magicians in Vic..."
+      },
+      {
+        "id": 11,
+        "similarity": 0.805790640476819,
+        "contentPreview": "Interstellar (2014). Directed by Christopher Nolan. Starring Matthew McConaughey and Anne Hathaway. A group of astronaut..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "As a movie expert, I can tell you that the term \"best\" is subjective and can depend on individual preferences. However, based on the context provided, 'The Dark Knight' has the highest rating of 9.0/10 among the listed Christopher Nolan films.",
+    "tokens": {
+      "embedding": 8,
+      "input": 461,
+      "output": 55
+    },
+    "cost": 0.0171308,
+    "grade": 2
+  },
+  {
+    "id": 12,
+    "query": "What's a good movie about dreams or alternate realities?",
+    "category": "ambiguous",
+    "expectedAnswer": "Could be Inception, Matrix, Eternal Sunshine, Everything Everywhere",
+    "latencyMs": 3453,
+    "retrievedChunks": [
+      {
+        "id": 9,
+        "similarity": 0.816299511459426,
+        "contentPreview": "The Matrix (1999). Directed by the Wachowskis. Starring Keanu Reeves, Laurence Fishburne, and Carrie-Anne Moss. A comput..."
+      },
+      {
+        "id": 6,
+        "similarity": 0.815414024777475,
+        "contentPreview": "Inception (2010). Directed by Christopher Nolan. Starring Leonardo DiCaprio. Dom Cobb is a thief who steals corporate se..."
+      },
+      {
+        "id": 11,
+        "similarity": 0.800907182882743,
+        "contentPreview": "Interstellar (2014). Directed by Christopher Nolan. Starring Matthew McConaughey and Anne Hathaway. A group of astronaut..."
+      },
+      {
+        "id": 37,
+        "similarity": 0.799515771909147,
+        "contentPreview": "Eternal Sunshine of the Spotless Mind (2004). Directed by Michel Gondry. Starring Jim Carrey and Kate Winslet. After a p..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Two good movies about dreams and alternate realities are \"The Matrix\" and \"Inception\". In \"The Matrix\", the main character discovers that his reality is actually a simulation created by machines. On the other hand, \"Inception\" is about a thief who uses dream-sharing technology to steal corporate secrets and is tasked with planting an idea into someone's subconscious.",
+    "tokens": {
+      "embedding": 11,
+      "input": 499,
+      "output": 72
+    },
+    "cost": 0.0192911,
+    "grade": 2
+  },
+  {
+    "id": 13,
+    "query": "Which movie starring Leonardo DiCaprio should I watch?",
+    "category": "ambiguous",
+    "expectedAnswer": "Could be Inception, Django, Departed, Revenant",
+    "latencyMs": 4898,
+    "retrievedChunks": [
+      {
+        "id": 43,
+        "similarity": 0.820395241952344,
+        "contentPreview": "The Revenant (2015). Directed by Alejandro Gonzalez Inarritu. Starring Leonardo DiCaprio. Frontiersman Hugh Glass is lef..."
+      },
+      {
+        "id": 24,
+        "similarity": 0.813729959958225,
+        "contentPreview": "The Departed (2006). Directed by Martin Scorsese. Starring Leonardo DiCaprio, Matt Damon, and Jack Nicholson. An underco..."
+      },
+      {
+        "id": 2,
+        "similarity": 0.792603375731928,
+        "contentPreview": "The Godfather (1972). Directed by Francis Ford Coppola. Starring Marlon Brando and Al Pacino. The aging patriarch of an ..."
+      },
+      {
+        "id": 20,
+        "similarity": 0.791967419161098,
+        "contentPreview": "Django Unchained (2012). Directed by Quentin Tarantino. Starring Jamie Foxx, Christoph Waltz, and Leonardo DiCaprio. A f..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "As a movie expert, I would recommend all three movies starring Leonardo DiCaprio, as they all have high ratings and unique storylines. If you prefer a survival and revenge story in extreme conditions, go for \"The Revenant\". If you're into crime and thrillers with a complex plot, \"The Departed\" is your best bet. And if you enjoy dramas set in historical contexts with elements of Western genre, \"Django Unchained\" is the way to go.",
+    "tokens": {
+      "embedding": 11,
+      "input": 529,
+      "output": 99
+    },
+    "cost": 0.0218111,
+    "grade": 2
+  },
+  {
+    "id": 14,
+    "query": "What animated movie would you recommend for a family?",
+    "category": "ambiguous",
+    "expectedAnswer": "Could be WALL-E, Up, Coco, Lion King, Toy Story, Spirited Away",
+    "latencyMs": 3825,
+    "retrievedChunks": [
+      {
+        "id": 42,
+        "similarity": 0.820188462734246,
+        "contentPreview": "Up (2009). Directed by Pete Docter. Pixar Animation Studios. A 78-year-old widower named Carl Fredricksen ties thousands..."
+      },
+      {
+        "id": 35,
+        "similarity": 0.804797768592857,
+        "contentPreview": "Coco (2017). Directed by Lee Unkrich. Pixar Animation Studios. A 12-year-old Mexican boy named Miguel accidentally enter..."
+      },
+      {
+        "id": 28,
+        "similarity": 0.801908052195084,
+        "contentPreview": "WALL-E (2008). Directed by Andrew Stanton. Pixar Animation Studios. In the distant future, a small waste-collecting robo..."
+      },
+      {
+        "id": 45,
+        "similarity": 0.801636862852399,
+        "contentPreview": "Toy Story (1995). Directed by John Lasseter. Pixar Animation Studios. Woody, a cowboy doll, feels threatened when his ow..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "All the movies listed are great for family viewing as they all fall under the Animation, Adventure, and Family genres. However, if you're looking for something that celebrates culture and tradition, \"Coco\" is a wonderful choice. If you prefer a movie that revolutionized animation and launched a successful franchise, then \"Toy Story\" would be ideal. \"WALL-E\" offers an almost dialogue-free first 40 minutes which could be interesting, while \"Up\" is famous for its emotional opening montage.",
+    "tokens": {
+      "embedding": 10,
+      "input": 517,
+      "output": 101
+    },
+    "cost": 0.021571,
+    "grade": 2
+  },
+  {
+    "id": 15,
+    "query": "Which film has the best twist ending?",
+    "category": "ambiguous",
+    "expectedAnswer": "Could be Fight Club, Usual Suspects, Prestige, Sixth Sense",
+    "latencyMs": 2758,
+    "retrievedChunks": [
+      {
+        "id": 49,
+        "similarity": 0.790178484416388,
+        "contentPreview": "The Usual Suspects (1995). Directed by Bryan Singer. Starring Kevin Spacey and Gabriel Byrne. A sole survivor tells inve..."
+      },
+      {
+        "id": 19,
+        "similarity": 0.783777729882111,
+        "contentPreview": "The Prestige (2006). Directed by Christopher Nolan. Starring Hugh Jackman and Christian Bale. Two rival magicians in Vic..."
+      },
+      {
+        "id": 24,
+        "similarity": 0.780316267051302,
+        "contentPreview": "The Departed (2006). Directed by Martin Scorsese. Starring Leonardo DiCaprio, Matt Damon, and Jack Nicholson. An underco..."
+      },
+      {
+        "id": 14,
+        "similarity": 0.775897396038721,
+        "contentPreview": "Star Wars: Episode V - The Empire Strikes Back (1980). Directed by Irvin Kershner. Starring Mark Hamill, Harrison Ford, ..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "The context provided doesn't specify which film has the best twist ending. However, it does mention that \"The Usual Suspects\" is famous for its twist ending.",
+    "tokens": {
+      "embedding": 8,
+      "input": 491,
+      "output": 34
+    },
+    "cost": 0.016770800000000002,
+    "grade": 2
+  },
+  {
+    "id": 16,
+    "query": "What is the capital of France?",
+    "category": "off-topic",
+    "expectedAnswer": "Should refuse — not in movie context",
+    "latencyMs": 1256,
+    "retrievedChunks": [
+      {
+        "id": 40,
+        "similarity": 0.736308304823482,
+        "contentPreview": "Arrival (2016). Directed by Denis Villeneuve. Starring Amy Adams and Jeremy Renner. When twelve mysterious alien spacecr..."
+      },
+      {
+        "id": 44,
+        "similarity": 0.734894458080659,
+        "contentPreview": "La La Land (2016). Directed by Damien Chazelle. Starring Ryan Gosling and Emma Stone. A jazz pianist and an aspiring act..."
+      },
+      {
+        "id": 42,
+        "similarity": 0.724347955143939,
+        "contentPreview": "Up (2009). Directed by Pete Docter. Pixar Animation Studios. A 78-year-old widower named Carl Fredricksen ties thousands..."
+      },
+      {
+        "id": 48,
+        "similarity": 0.722676710922926,
+        "contentPreview": "Dunkirk (2017). Directed by Christopher Nolan. Starring Fionn Whitehead, Tom Hardy, and Mark Rylance. The evacuation of ..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Sorry, I don't know the answer.",
+    "tokens": {
+      "embedding": 7,
+      "input": 535,
+      "output": 9
+    },
+    "cost": 0.0165907,
+    "grade": 2
+  },
+  {
+    "id": 17,
+    "query": "Can you help me write a Python script to scrape websites?",
+    "category": "off-topic",
+    "expectedAnswer": "Should refuse — not a movie question",
+    "latencyMs": 987,
+    "retrievedChunks": [
+      {
+        "id": 46,
+        "similarity": 0.715212319467988,
+        "contentPreview": "Her (2013). Directed by Spike Jonze. Starring Joaquin Phoenix and Scarlett Johansson (voice). In a near-future Los Angel..."
+      },
+      {
+        "id": 20,
+        "similarity": 0.708120296449591,
+        "contentPreview": "Django Unchained (2012). Directed by Quentin Tarantino. Starring Jamie Foxx, Christoph Waltz, and Leonardo DiCaprio. A f..."
+      },
+      {
+        "id": 28,
+        "similarity": 0.696978068711993,
+        "contentPreview": "WALL-E (2008). Directed by Andrew Stanton. Pixar Animation Studios. In the distant future, a small waste-collecting robo..."
+      },
+      {
+        "id": 40,
+        "similarity": 0.696700954044023,
+        "contentPreview": "Arrival (2016). Directed by Denis Villeneuve. Starring Amy Adams and Jeremy Renner. When twelve mysterious alien spacecr..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Sorry, I don't know the answer.",
+    "tokens": {
+      "embedding": 12,
+      "input": 511,
+      "output": 9
+    },
+    "cost": 0.0158712,
+    "grade": 2
+  },
+  {
+    "id": 18,
+    "query": "What is the plot of the TV show Breaking Bad?",
+    "category": "off-topic",
+    "expectedAnswer": "Should refuse — TV show not in corpus",
+    "latencyMs": 2310,
+    "retrievedChunks": [
+      {
+        "id": 36,
+        "similarity": 0.794468927053747,
+        "contentPreview": "No Country for Old Men (2007). Directed by Joel and Ethan Coen. Starring Javier Bardem, Josh Brolin, and Tommy Lee Jones..."
+      },
+      {
+        "id": 49,
+        "similarity": 0.791337773086251,
+        "contentPreview": "The Usual Suspects (1995). Directed by Bryan Singer. Starring Kevin Spacey and Gabriel Byrne. A sole survivor tells inve..."
+      },
+      {
+        "id": 17,
+        "similarity": 0.767662525177007,
+        "contentPreview": "Parasite (2019). Directed by Bong Joon-ho. Starring Song Kang-ho. The Kim family, who are poor, scheme to become employe..."
+      },
+      {
+        "id": 25,
+        "similarity": 0.764591770993193,
+        "contentPreview": "Back to the Future (1985). Directed by Robert Zemeckis. Starring Michael J. Fox and Christopher Lloyd. Teenager Marty Mc..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Sorry, I don't know the answer.",
+    "tokens": {
+      "embedding": 11,
+      "input": 530,
+      "output": 9
+    },
+    "cost": 0.0164411,
+    "grade": 2
+  },
+  {
+    "id": 19,
+    "query": "Who won the 2024 Super Bowl?",
+    "category": "off-topic",
+    "expectedAnswer": "Should refuse — sports, not movies",
+    "latencyMs": 934,
+    "retrievedChunks": [
+      {
+        "id": 33,
+        "similarity": 0.729279193429779,
+        "contentPreview": "Blade Runner 2049 (2017). Directed by Denis Villeneuve. Starring Ryan Gosling and Harrison Ford. LAPD Officer K, a new b..."
+      },
+      {
+        "id": 47,
+        "similarity": 0.722039914739108,
+        "contentPreview": "Everything Everywhere All at Once (2022). Directed by Daniel Kwan and Daniel Scheinert. Starring Michelle Yeoh, Ke Huy Q..."
+      },
+      {
+        "id": 14,
+        "similarity": 0.719961185441446,
+        "contentPreview": "Star Wars: Episode V - The Empire Strikes Back (1980). Directed by Irvin Kershner. Starring Mark Hamill, Harrison Ford, ..."
+      },
+      {
+        "id": 50,
+        "similarity": 0.71767314883151,
+        "contentPreview": "Moonlight (2016). Directed by Barry Jenkins. Starring Mahershala Ali, Naomie Harris, and Trevante Rhodes. The life of a ..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Sorry, I don't know the answer.",
+    "tokens": {
+      "embedding": 9,
+      "input": 551,
+      "output": 9
+    },
+    "cost": 0.0170709,
+    "grade": 2
+  },
+  {
+    "id": 20,
+    "query": "Tell me about the movie Avatar 3",
+    "category": "off-topic",
+    "expectedAnswer": "Should refuse — not in corpus",
+    "latencyMs": 1508,
+    "retrievedChunks": [
+      {
+        "id": 42,
+        "similarity": 0.77461337078095,
+        "contentPreview": "Up (2009). Directed by Pete Docter. Pixar Animation Studios. A 78-year-old widower named Carl Fredricksen ties thousands..."
+      },
+      {
+        "id": 47,
+        "similarity": 0.773862046511013,
+        "contentPreview": "Everything Everywhere All at Once (2022). Directed by Daniel Kwan and Daniel Scheinert. Starring Michelle Yeoh, Ke Huy Q..."
+      },
+      {
+        "id": 40,
+        "similarity": 0.773752360456342,
+        "contentPreview": "Arrival (2016). Directed by Denis Villeneuve. Starring Amy Adams and Jeremy Renner. When twelve mysterious alien spacecr..."
+      },
+      {
+        "id": 43,
+        "similarity": 0.773601203036648,
+        "contentPreview": "The Revenant (2015). Directed by Alejandro Gonzalez Inarritu. Starring Leonardo DiCaprio. Frontiersman Hugh Glass is lef..."
+      }
+    ],
+    "numChunksReturned": 4,
+    "response": "Sorry, I don't know the answer. The context provided does not contain any information about the movie Avatar 3.",
+    "tokens": {
+      "embedding": 8,
+      "input": 554,
+      "output": 24
+    },
+    "cost": 0.0180608,
+    "grade": 2
+  }
+]
