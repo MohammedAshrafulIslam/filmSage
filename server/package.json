@@ -1,5 +1,5 @@
 {
-  "name": "reelrecs-server",
+  "name": "filmsage-server",
   "version": "1.0.0",
   "type": "module",
   "scripts": {

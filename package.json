@@ -1,5 +1,5 @@
 {
-  "name": "reelrecs",
+  "name": "filmsage",
   "version": "1.0.0",
   "description": "RAG-powered movie recommendation chatbot",
   "type": "module",
